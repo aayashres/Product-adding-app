@@ -1,0 +1,44 @@
+/* External CSS file: styles.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    height :205px;
+}
+
+.product-image {
+    width: 100%;
+    height:125px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.see-more{
+    text-decoration: none;
+    background-color: rgb(85, 138, 85);
+    color:black;
+    border: 1px solid rgb(85, 138, 85);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+.product-name {
+    font-size: 15px;
+    margin: 0;
+}
+
+.product-price {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #4CAF50; /* green color for price */
+    font-style: italic;
+}
