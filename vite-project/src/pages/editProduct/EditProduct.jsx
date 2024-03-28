@@ -70,7 +70,7 @@ const updateProduct = async (e) => {
         </div>
         <div className="form-group">
           <label htmlFor="price">Price:</label>
-          <input type="number" id="price" name="price" required value={edited.price} onChange={handleChange} />
+          <input type="text" id="price" name="price" required value={edited.price} onChange={handleChange} />
         </div>
         <div className="form-group">
           <label htmlFor="category">Category:</label>
