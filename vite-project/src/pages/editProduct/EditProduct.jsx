@@ -18,8 +18,8 @@ const [edited , setEdited] = useState({
 useEffect(() => {
     const fetchProduct = async() => {
       try{
-        const response = await axios.put(`https://66028dc79d7276a755538507.mockapi.io/products/:${id}`)
-        setEdited(response.edited)
+        const response = await axios.put(`https://66028dc79d7276a755538507.mockapi.io/products/${id}`)
+        setEdited(response.data)
       }catch(err){
         console.log("Error fetching data")
       }
@@ -38,7 +38,7 @@ const handleChange = (e) => {
 const updateProduct = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`https://66028dc79d7276a755538507.mockapi.io/products//${id}`, edited);
+      const response = await axios.put(`https://66028dc79d7276a755538507.mockapi.io/products/${id}`, edited);
       if (response.status === 200) {
         navigate('/');
       } else {
