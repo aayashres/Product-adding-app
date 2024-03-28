@@ -12,7 +12,10 @@ const Home = () => {
   const fetchProducts = async() => {
     const response = await axios.get('https://66028dc79d7276a755538507.mockapi.io/products')
     if(response.status === 200){
-      setProducts(response.data)
+      const updatedProducts = response.data.map((product) => {
+      return {...product , image : product.image + `?random=${product.id}`}
+    })
+      setProducts(updatedProducts)
     }
   }
 

@@ -5,10 +5,13 @@ import { Link, useNavigate } from 'react-router-dom'
 const Navbar = () => {
   const navigate = useNavigate()
 
+
   const handleClick = () =>{
     navigate('/')
   }
+
   return (
+    
     <nav>
         <div className="container">
             <div className="logo" onClick={handleClick} style={{cursor: "pointer"}}>Product Management System</div>
@@ -18,11 +21,15 @@ const Navbar = () => {
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li> */}
             </ul>
-            <Link to="/addproduct" className="add-product-btn">Add Product</Link>
+            
+               <Link to="/addproduct" className="add-product-btn">Add Product</Link>
+              
+            
         </div>
     </nav>
   )
 }
+
 
 export default Navbar
 

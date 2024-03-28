@@ -4,6 +4,7 @@ import { useState , useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './singleproduct.css'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const SingleProduct = () => {
   const {id} = useParams()
@@ -30,6 +31,8 @@ const SingleProduct = () => {
     fetchProduct()
   },[])
 
+  
+
   return (
     <>
     <Navbar />
@@ -42,7 +45,8 @@ const SingleProduct = () => {
             <p className="product-description">{product.description}</p>
             <p className="product-price">${product.price}</p>
             <button className="add-to-cart-btn" onClick={deleteProduct}>Delete</button>
-            <button className="add-to-cart-btn" style={{marginLeft: '10px'}}>Edit</button>
+            <Link to={`/editproduct/${id}` }className="add-product-btn" style={{marginLeft: "10px" , padding : "11px 30px"}}>Edit</Link>
+              
         </div>
     </div>
 

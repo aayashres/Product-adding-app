@@ -1,14 +1,16 @@
-/* External CSS file: styles.css */
+
 
 .form-container {
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px 40px 20px 20px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
 
-
+h2 {
+    text-align: center;
+}
 
 .form-group {
     margin-bottom: 20px;
@@ -27,7 +29,6 @@ textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    object-fit: contain;
 }
 
 textarea {
